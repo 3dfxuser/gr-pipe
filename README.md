@@ -74,45 +74,17 @@ Known limitations and problems:
 
 ## Building and installing gr-pipe ##
 
-### Installing with GNU Radio PyBOMBS ###
-
-First, install PyBOMBS on your system, following the instructions at:
-https://github.com/gnuradio/pybombs
-
-For example:
-
-    pip3 install --user --upgrade git+https://github.com/gnuradio/pybombs.git
-    pybombs auto-config
-    pybombs recipes add-defaults
-    pybombs prefix init ~/my-gnuradio
-
-Then, install gr-pipe using the PyBOMBS recipe:
-
-    pybombs install gr-pipe
-
-Finally, to use the gr-pipe blocks in gnuradio-companion:
-
-    source ~/my-gnuradio/setup_env.sh
-    gnuradio-companion
-
-or, using the PyBOMBS command:
-
-    pybombs run gnuradio-companion
-
-
 ### Installing manually ###
 
 This procedure assumes you have development tools and GNU Radio
 already already installed.
 
-    git clone git://github.com/jolivain/gr-pipe.git
+    git clone git://github.com/3dfxuser/gr-pipe.git
     mkdir gr-pipe/build
     cd gr-pipe/build
     cmake ..
     make
     sudo make install
+    sudo ldconfig
 
-
-Feedback and comments are welcome !
-
-Julien Olivain <ju.o@free.fr>
+    
