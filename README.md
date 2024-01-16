@@ -79,7 +79,7 @@ Known limitations and problems:
 This procedure assumes you have development tools and GNU Radio
 already already installed.
 
-    git clone git://github.com/3dfxuser/gr-pipe.git
+    git clone https://github.com/3dfxuser/gr-pipe.git
     mkdir gr-pipe/build
     cd gr-pipe/build
     cmake ..
